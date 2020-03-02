@@ -1,0 +1,45 @@
+<html>
+<body>
+	<style>
+		ul{
+			display: flex;
+			width: 100%;
+		}
+		.capsule{
+			background-color: rebeccapurple;
+			min-height: 3rem;
+			width: 24rem;
+		}
+		ul li{
+			min-height: 10rem;
+			list-style: none;
+			padding: 1rem;
+		}
+		@media screen and (min-width: 200px) and (max-width: 760px){
+			ul{
+				flex-direction: column;
+				margin-left: auto;
+				margin-right: auto;
+				width: auto;
+			}
+			.capsule{
+				width: 74%;
+			}
+			ul li{
+				padding: none;
+			}	
+		}
+	</style>
+	<ul>
+		<li>
+			<div class="capsule"></div>
+		</li>
+		<li>
+			<div class="capsule"></div>
+		</li>
+		<li>
+			<div class="capsule"></div>
+		</li>
+	</ul> 
+</body>
+</html>
