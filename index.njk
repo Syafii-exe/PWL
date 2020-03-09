@@ -8,16 +8,32 @@ layout : tataletak.njk
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="/asset/tataletak.css" rel="stylesheet" type="text/css">
+  <link href="/asset/darkMode.js" rel="stylesheet" type="text/css">
+  
 </head>
 <body>
   <div class="header">
     <h1> SELAMAT DATANG </h1>
     <p>Semoga harimu dipenuhi oleh kebahagiaan</p>
-  </div>
 
-  <!-- Footer -->
-  <div class="footer">
-    <h2>Footer</h2>
+
+    <script>
+      // 1 detik = 1000
+      window.setTimeout("waktu()",1000);  
+      function waktu() {   
+        var tanggal = new Date();  
+        setTimeout("waktu()",1000000);  //lama dark mode
+
+        if (tanggal.getHours() >= 18 ) {
+          function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+          }
+          myFunction();
+        }
+      }
+
+    </script>
   </div>
 
 </body>

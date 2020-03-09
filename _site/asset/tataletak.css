@@ -5,9 +5,13 @@
 	body {
 	  font-family: Arial;
 	  margin: 0;
+	  padding: 10px;
 	}
 
-
+	.dark-mode {
+	  background-color: black;
+	  color: white;
+	}
 	.header {
 	  height : 100%;
 	  width : 100%;
